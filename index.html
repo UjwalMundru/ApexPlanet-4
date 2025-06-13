@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .btn {
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      background: white;
+      color: #3498db;
+      border: none;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #2980b9;
+      color: white;
+      transform: scale(1.05);
+    }
+    @media (min-width: 600px) {
+      .btn-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Projects</h1>
+    <div class="btn-group">
+      <a href="portfolio/index.html"><button class="btn">Portfolio</button></a>
+      <a href="ToDo/index.html"><button class="btn">To-Do App</button></a>
+      <a href="Productlisting/index.html"><button class="btn">Product Listing</button></a>
+    </div>
+  </div>
+</body>
+</html>
